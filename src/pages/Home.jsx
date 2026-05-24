@@ -1,9 +1,13 @@
-
+import HeroSection from "../components/home/HeroSection";
+import ServicesPreview from "../components/home/ServicesPreview";
+import CTASection from "../components/home/CTASection";
 
 export default function Home() {
   return (
     <div>
-      <h1>Home Page Working</h1>
+      <HeroSection />
+      <ServicesPreview />
+      <CTASection />
     </div>
-  )
+  );
 }

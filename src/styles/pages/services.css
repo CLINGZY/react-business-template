@@ -1,0 +1,43 @@
+.services-page {
+  padding: var(--spacing-xl) var(--spacing-lg);
+  text-align: center;
+  background-color: var(--color-surface);
+  min-height: 100vh;
+}
+
+.services-page h1 {
+  font-size: var(--font-size-xl);
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-xl);
+}
+
+.services-grid {
+  display: flex;
+  gap: var(--spacing-lg);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background-color: var(--color-white);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  max-width: 300px;
+  box-shadow: var(--shadow-soft);
+
+  transition: transform 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+}
+
+.service-card h3 {
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text);
+}
+
+.service-card p {
+  color: var(--color-text);
+  opacity: 0.8;
+}
