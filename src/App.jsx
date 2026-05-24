@@ -1,12 +1,12 @@
-import { useState } from 'react'
+import { BrowserRouter } from "react-router-dom";
+import AppRoutes from "./routes/AppRoutes";
 
 function App() {
-
   return (
-    <>
-      <h1>Hello, React!</h1>
-    </>
-  )
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
+  );
 }
 
 export default App
