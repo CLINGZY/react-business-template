@@ -3,8 +3,12 @@ import { createRoot } from 'react-dom/client'
 import "./styles/global.css";
 import App from './App.jsx'
 
+import { BusinessProvider } from "./context/BusinessContext";
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <BusinessProvider>
+      <App />
+    </BusinessProvider>
   </StrictMode>,
 )

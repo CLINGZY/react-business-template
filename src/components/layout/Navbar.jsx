@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
-import { business } from "../../config/business";
+import { useContext } from "react";
+import { BusinessContext } from "../../context/BusinessContext";
 import "../../styles/components/navbar.css";
 
 export default function Navbar() {
+  const business = useContext(BusinessContext)
+
   return (
     <nav className="navbar">
 

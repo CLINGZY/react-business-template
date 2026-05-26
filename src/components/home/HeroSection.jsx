@@ -1,7 +1,11 @@
 import "../../styles/components/hero-section.css";
-import { business } from "../../config/business";
+
+import { useContext } from "react";
+import { BusinessContext } from "../../context/BusinessContext";
 
 export default function HeroSection() {
+  const business = useContext(BusinessContext);
+
   return (
     <section className="hero">
       <div className="hero-content container">
