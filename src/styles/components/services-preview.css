@@ -7,7 +7,7 @@
 }
 
 .services-title {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-xl);
 
   margin-bottom: var(--spacing-xl);
 
@@ -36,4 +36,15 @@
 
 .service-card h3 {
   margin-bottom: var(--spacing-md);
+}
+
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    max-width: 100%;
+  }
 }

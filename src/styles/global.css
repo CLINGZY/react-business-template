@@ -102,3 +102,29 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  :root {
+    --font-size-hero: 2.4rem;
+    --font-size-xl: 2rem;
+    --spacing-xl: 3rem;
+  }
+
+  .container {
+    padding: 0 var(--spacing-md);
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --font-size-hero: 2rem;
+    --font-size-xl: 1.7rem;
+  }
+}

@@ -1,0 +1,149 @@
+.contact-page {
+  padding: var(--spacing-2xl) var(--spacing-lg);
+
+  background: var(--color-background);
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.contact-header {
+  text-align: center;
+
+  max-width: 650px;
+
+  margin: 0 auto var(--spacing-xl);
+}
+
+.contact-header h1 {
+  font-size: var(--font-size-xl);
+  font-weight: 500;
+
+  color: rgba(34, 34, 34, 0.88);
+
+  margin-bottom: var(--spacing-md);
+
+  letter-spacing: -0.3px;
+}
+
+.contact-header p {
+  color: rgba(34, 34, 34, 0.6);
+
+  line-height: 1.7;
+}
+
+/* =========================
+   MAIN ACTION BLOCK
+========================= */
+
+.contact-main {
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--spacing-md);
+
+  max-width: 420px;
+
+  margin: 0 auto var(--spacing-xl);
+}
+
+/* PRIMARY ACTION BUTTONS */
+.contact-primary {
+  display: block;
+
+  padding: var(--spacing-md) var(--spacing-lg);
+
+  border-radius: var(--border-radius);
+
+  text-decoration: none;
+
+  font-size: var(--font-size-base);
+
+  text-align: center;
+
+  color: var(--color-white);
+
+  transition: all 0.25s ease;
+
+  box-shadow: none;
+}
+
+/* CALL */
+.contact-primary.call {
+  background: rgba(34, 34, 34, 0.85);
+}
+
+/* WHATSAPP */
+.contact-primary.whatsapp {
+  background: rgba(37, 211, 102, 0.85);
+}
+
+/* EMAIL */
+.contact-primary.email {
+  background: var(--color-primary);
+}
+
+/* HOVER */
+.contact-primary:hover {
+  transform: translateY(-3px);
+
+  opacity: 0.95;
+}
+
+/* =========================
+   SOCIAL STRIP
+========================= */
+
+.contact-socials {
+  display: flex;
+  justify-content: center;
+
+  gap: var(--spacing-lg);
+
+  margin-top: var(--spacing-lg);
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+
+  text-decoration: none;
+
+  padding: var(--spacing-sm) var(--spacing-md);
+
+  border-radius: 999px;
+
+  font-size: var(--font-size-base);
+
+  color: rgba(34, 34, 34, 0.65);
+
+  background: rgba(255, 255, 255, 0.4);
+
+  border: 1px solid rgba(34, 34, 34, 0.06);
+
+  transition: all 0.25s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-2px);
+
+  border-color: rgba(139, 94, 60, 0.25);
+
+  background: rgba(255, 255, 255, 0.7);
+}
+
+/* ICON */
+.social-link span {
+  font-size: 1.1rem;
+}
+
+/* BRAND HOVER COLORS */
+.social-link.instagram:hover {
+  color: #c13584;
+}
+
+.social-link.facebook:hover {
+  color: #1877f2;
+}
